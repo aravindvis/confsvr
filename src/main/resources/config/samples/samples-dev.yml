@@ -1,0 +1,16 @@
+mysql.database.username: "root"
+mysql.database.password: "MyNewPass"
+mysql.database.driver: "com.mysql.jdbc.Driver"
+mysql.database.url: "jdbc:mysql://127.0.0.1:3306/mytest"
+
+vault.url: "http://127.0.0.1:8200/v1"
+vault.mysql.rolename: "readrole"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

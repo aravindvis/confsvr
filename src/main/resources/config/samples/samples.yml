@@ -1,0 +1,14 @@
+tracer.property: "I am default"
+postgre.database.username: "aravind"
+postgre.database.password: "MyNewPass"
+postgre.database.driver: "org.postgresql.Driver"
+postgre.database.url: "jdbc:postgresql://127.0.0.1:5432/mytest"
+
+mysql.database.username: "aravind"
+mysql.database.password: "MyNewPass"
+mysql.database.driver: "com.mysql.jdbc.Driver"
+mysql.database.url: "jdbc:mysql://127.0.0.1:3306/mytest"
+
+vault.sampleapp.roleId: "e932c0f6-3024-2cd4-0cb6-86d98ab25ba4"
+vault.sampleapp.secretId: "2e875dfc-9bd2-7e35-d13b-ab1fb4f8422f"
+vault.url: "http://127.0.0.1:8200/v1"

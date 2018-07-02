@@ -1,5 +1,5 @@
 tracer.property: "I am default"
-postgre.database.username: "aravind"
+postgre.database.username: "aravindviswanathan"
 postgre.database.password: "MyNewPass"
 postgre.database.driver: "org.postgresql.Driver"
 postgre.database.url: "jdbc:postgresql://127.0.0.1:5432/mytest"
@@ -9,6 +9,12 @@ mysql.database.password: "MyNewPass"
 mysql.database.driver: "com.mysql.jdbc.Driver"
 mysql.database.url: "jdbc:mysql://127.0.0.1:3306/mytest"
 
-vault.sampleapp.roleId: "e932c0f6-3024-2cd4-0cb6-86d98ab25ba4"
-vault.sampleapp.secretId: "2e875dfc-9bd2-7e35-d13b-ab1fb4f8422f"
-vault.url: "http://127.0.0.1:8200/v1"
+vault.sampleapp.roleId: "de4c8ce0-fd7f-117f-13ee-ea7cf1609315"
+vault.sampleapp.secretId: "07f467c5-09ec-97c1-6a91-92d1c0f403e3"
+vault.url: "http://127.0.0.1:8200"
+
+user:
+     userId: mysql
+     id: mysql
+     name: postgresql
+     desc: mongodb

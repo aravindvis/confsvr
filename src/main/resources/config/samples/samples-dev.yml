@@ -3,8 +3,12 @@ mysql.database.password: "MyNewPass"
 mysql.database.driver: "com.mysql.jdbc.Driver"
 mysql.database.url: "jdbc:mysql://127.0.0.1:3306/mytest"
 
-vault.url: "http://127.0.0.1:8200/v1"
-vault.mysql.rolename: "readrole"
+vault.url: "http://127.0.0.1:8200"
+vault.mysql.rolename: "allrole"
+
+vault.sampleapp.roleId: "de4c8ce0-fd7f-117f-13ee-ea7cf1609315"
+vault.sampleapp.secretId: "07f467c5-09ec-97c1-6a91-92d1c0f403e3"
+spring.zipkin.baseurl: http://localhost:9411
 
 eureka:
   instance:
@@ -14,3 +18,18 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+      
+      
+spring.cloud.config.name: zipkin
+spring.cloud.config.discovery.service-id: config
+spring.cloud.config.discovery.enabled: true
+spring.cloud.config.username: configUser
+spring.cloud.config.password: configPassword
+
+
+database:
+    user:
+      userId: mysql
+      id: mysql
+      name: postgresql
+      desc: mongodb

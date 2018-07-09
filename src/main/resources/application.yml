@@ -1,10 +1,20 @@
 server:
-       port: 8888
+  port: 8888
 spring:
-       profiles: 
-                active: native
-       cloud: 
-             config:
-                    server:
-                           native:
-                                  searchLocations: file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/samples       
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience,file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/samples
+  application:
+    name: configservice
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
